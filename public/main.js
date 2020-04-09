@@ -57,7 +57,8 @@ fetch("./public/posts.json")
       }
 
       //output the result in the index file from js
-      result = `<div class="old-post">
+      result =
+        `<div class="old-post">
                     <figure>
                       <img src="${postImg}" alt="chirp bird"/>
                     </figure>
@@ -95,14 +96,13 @@ fetch("./public/posts.json")
                     <div class="${commentFormArea}" style="  display: none;">
                       <form class="comment_form" method="POST" action="/comment/${postId}">
                         <textarea name="comment_text" required></textarea>
-                        <input type="submit" name="postComment" value="&#9998;Sent" id="commentButton"/>
+                        <input type="submit" name="postComment" value="&#9998;Send" id="commentButton"/>
                       </form>
                       <h2>  Comments .....✍ </h2>
                         ${comment_html}
                     </div>
                     <hr />
                   </div>` + result;
-      result = `<h2> Posts </h2>` + result;
       document.getElementById("posts_area").innerHTML = result;
     });
   });
