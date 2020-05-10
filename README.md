@@ -19,6 +19,8 @@ The Website should have the following functionality for users:
 
 ### CHIRP
 
+Hosted at: https://mysterious-brushlands-61855.herokuapp.com/
+
 Is a microblogging system created that lets users post messages (with a maximum of 256 characters), reactions and GIFS. A platform where interaction and engagement from other users exists through the COMMENT feature. All data inputs are stored locally via JSON database so users are able to review their "chirps".
 
 ### CHIRP was built with
